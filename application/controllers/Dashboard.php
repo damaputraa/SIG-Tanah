@@ -44,7 +44,7 @@ class Dashboard extends CI_Controller {
         }
 
 		$data = array(
-			'title' => 'Dashboard' , 
+			'title' => 'Dashboard' ,
 			'user' => $user,
 			'total_jenis' => $total_jenis,
 			'total_penduduk' => $total_penduduk,

@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-right">
-                <?php echo anchor(site_url('data_tanah/word'), 'Word', 'class="btn btn-primary"'); ?>                
+                <?php echo anchor(site_url('data_tanah/word'), 'Word', 'class="btn btn-primary"'); ?>
             </div>
         </div>
         <?php $group = 3; if ($this->ion_auth->in_group($group)): ?>
@@ -99,10 +99,9 @@
             <td><img src="<?php echo base_url('gambar/tanah/'.$data_tanah->gambar) ?>" width="50px" height="50px"></td>
             <td><?php echo $data_tanah->tanggal ?></td>
             <td style="text-align:center" width="200px">
-            <?php 
-            echo anchor(site_url('data_tanah/update/'.$data_tanah->id_tanah),'Update'); 
-            echo ' | '; 
-            echo anchor(site_url('data_tanah/delete/'.$data_tanah->id_tanah.'/'.$data_tanah->id_penduduk),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"'); 
+            <?php
+            echo anchor(site_url('data_tanah/update/'.$data_tanah->id_tanah),'<i class="fa fa-edit"></i>', 'class="btn btn-warning btn-xs"');
+            echo anchor(site_url('data_tanah/delete/'.$data_tanah->id_tanah.'/'.$data_tanah->id_penduduk),'<i class="fa fa-trash"></i>','class="btn btn-danger btn-xs" onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
             ?>
             </td>
             </tr>

@@ -67,7 +67,7 @@
                                                 <a href="<?php echo base_url('home/peta') ?>" class="remove-border hvr-underline-from-center">Peta Tanah </a>
                                             </li>
                                             <li id="Contact" class="">
-                                                <a href="<?php echo base_url('home/contact') ?>" class="remove-border hvr-underline-from-center">Contact</a>
+                                                <a href="<?php echo base_url('home/contact') ?>" class="remove-border hvr-underline-from-center">Kontak</a>
                                             </li>
                                             <a href="<?= base_url('auth/login') ?>" class="mail-ico msg-gap hidden-xs" data-toggle="tooltip" data-placement="top" title="Login Admin"><i class="fa fa-sign-in for_inifial"></i></a>
                                         </ul>

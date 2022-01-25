@@ -5,7 +5,7 @@
                 <div class="">
 
                     <div class="row top_tiles">
-                    <?php $group = 3; 
+                    <?php $group = 3;
                         if ($this->ion_auth->in_group($group)): ?>
                         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="tile-stats">
@@ -28,7 +28,7 @@
                                 <div class="count"><?php echo $total_berita ?></div>
 
                                 <h3>Berita</h3>
-                                <p>Diterbitkan di situs</p> 
+                                <p>Diterbitkan di situs</p>
                             </div>
                         </div>
                         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     <?php endif ?>
-                        
+
                     </div>
 
                     <div class="row">
@@ -83,7 +83,7 @@
                             <div class="x_panel">
 
                                 <div class="x_title">
-                                    <h2>Peta <small>Data Tanah Penduduk | Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a>
+                                    <h2>Peta <small>Data Tanah Penduduk | Repost by <a href='https://damadev.com/' title='damadev.com' target='_blank'>damadev.com</a>
                                     </small></h2>
                                     <ul class="nav navbar-right panel_toolbox">
                                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>

@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS -->
 
     <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="<?php echo base_url() ?>assets/images/loading/icon.png" rel="icon" />
     <link href="<?php echo base_url() ?>assets/fonts/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/animate.min.css" rel="stylesheet">
 
@@ -37,7 +37,7 @@
 </head>
 
 <body style="background:#F7F7F7;">
-    
+
     <div class="">
         <a class="hiddenanchor" id="toregister"></a>
         <a class="hiddenanchor" id="tologin"></a>
@@ -65,13 +65,13 @@
                             </div>
                         </div>
                     <?php echo form_close();?>
-                    <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
-                    
+                    <br><center><p>Repost by <a href='https://damadev.com/' title='damadev.com' target='_blank'>damadev.com</a></p></center>
+
                     <!-- form -->
                 </section>
                 <!-- content -->
             </div>
-            
+
         </div>
     </div>
 
