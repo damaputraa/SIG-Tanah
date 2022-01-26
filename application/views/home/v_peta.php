@@ -13,6 +13,7 @@
 		<form id="pendudukForm" class="form-horizontal form-label-left" action="<?php echo base_url('home/peta2') ?>" method="post">
 			<div class="input-group">
                     <select class="form-control" name="id" onChange=selectChange(this.value)>
+										<option value="">-- Pilih Nama --</option>
 					<?php foreach ($penduduk_data as $p): ?>
 						<option value="<?php echo $p->id_penduduk ?>"><?php echo $p->nama ?> </option>
 					<?php endforeach ?>
