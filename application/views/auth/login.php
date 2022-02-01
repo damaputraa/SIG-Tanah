@@ -37,7 +37,6 @@
 </head>
 
 <body style="background:#F7F7F7;">
-
     <div class="">
         <a class="hiddenanchor" id="toregister"></a>
         <a class="hiddenanchor" id="tologin"></a>
@@ -49,7 +48,8 @@
                         <h1>Login Form</h1>
                         <p><?php echo $message;?></p>
                         <div>
-                            <?php echo form_input($identity);?>
+                            <?php echo form_input($identity);
+                            ?>
                         </div>
                         <div>
                             <?php echo form_input($password);?>
