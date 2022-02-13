@@ -101,7 +101,7 @@
             <td style="text-align:center" width="200px">
             <?php
             echo anchor(site_url('data_tanah/update/'.$data_tanah->id_tanah),'<i class="fa fa-edit"></i>', 'class="btn btn-warning btn-xs"');
-            echo anchor(site_url('data_tanah/delete/'.$data_tanah->id_tanah.'/'.$data_tanah->id_penduduk),'<i class="fa fa-trash"></i>','class="btn btn-danger btn-xs" onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
+            echo anchor(site_url('data_tanah/delete/'.$data_tanah->id_tanah.'/'.$data_tanah->id_penduduk),'<i class="fa fa-trash"></i>','class="btn btn-danger btn-xs" onclick="javasciprt: return confirm(\'Apakah yakin ingin hapus data ini ?\')"');
             ?>
             </td>
             </tr>

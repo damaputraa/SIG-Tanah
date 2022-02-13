@@ -17,8 +17,8 @@
                         </div>
                         <div class="col-xs-4 visible-xs  right-in-small">
                             <p class="text-right">
-                                <a href="contact_us.html"><i class="fa icon-envelope-open ph-size contact-mail-ph"></i> </a>
-                                <a href="contact_us.html"><i class="fa icon-screen-smartphone contact-mail-ph ph-size"></i> </a>
+                                <a href="https://linktr.ee/damaputra"><i class="fa icon-envelope-open ph-size contact-mail-ph"></i> </a>
+                                <a href="https://linktr.ee/damaputra"><i class="fa icon-screen-smartphone contact-mail-ph ph-size"></i> </a>
                             </p>
                         </div>
                         <!-- /.phone -->
@@ -68,6 +68,9 @@
                                             </li>
                                             <li id="Contact" class="">
                                                 <a href="<?php echo base_url('home/contact') ?>" class="remove-border hvr-underline-from-center">Kontak</a>
+                                            </li>
+                                            <li id="Contact" class="">
+                                                <a href="<?php echo base_url('auth/login') ?>" class="remove-border hvr-underline-from-center">Login</a>
                                             </li>
                                             <a href="<?= base_url('auth/login') ?>" class="mail-ico msg-gap hidden-xs" data-toggle="tooltip" data-placement="top" title="Login Admin"><i class="fa fa-sign-in for_inifial"></i></a>
                                         </ul>

@@ -3,7 +3,7 @@
 <script>
 update_address(<?=$latitude;?>,<?=$longitude;?>); //Set terlebih dahulu alamat lokasi pusat
 function showmap()
-{                       
+{
     var place = placesAutocomplete.getPlace(); //Inisialkan auto complete atau pencarian
     if (!place.geometry) //Jika hasil tidak ada
     {
@@ -18,7 +18,7 @@ function showmap()
         zoom: 17
     });
     placesAutocomplete.bindTo('bounds', map); //Render Map Auto Complete
-    
+
     //Tambah penandaan pada alamat
     var marker = new google.maps.Marker({
         map: map,
@@ -26,21 +26,21 @@ function showmap()
         title: "Drag Untuk mencari posisi",
         anchorPoint: new google.maps.Point(0, -29)
     });
-    
+
     if (place.geometry.viewport) {
           map.fitBounds(place.geometry.viewport);
         } else {
           map.setCenter(place.geometry.location);
           map.setZoom(17);
     }
-    marker.setPosition(place.geometry.location);        
+    marker.setPosition(place.geometry.location);
     marker_0 = createMarker_map(marker);
-    
+
         var alamat=document.getElementById('cari');
             google.maps.event.addListener(marker_0, "dragend", function(event) {
                 document.getElementById('lat').value = event.latLng.lat();
                 document.getElementById('lng').value = event.latLng.lng();
-                update_address(event.latLng.lat(),event.latLng.lng());              
+                update_address(event.latLng.lat(),event.latLng.lng());
             });
 }
 
@@ -51,7 +51,7 @@ function update_address(lat,lng)
     var latlng={lat: parseFloat(latitude), lng: parseFloat(longitude)};
     geocoder.geocode({'location': latlng}, function(results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
-      if (results[1]) {         
+      if (results[1]) {
         document.getElementById('cari').value=results[0].formatted_address;
       } else {
         window.alert('Tidak ada hasil pencarian');
@@ -120,10 +120,10 @@ function update_address(lat,lng)
                                         </div>
                                         <input type="hidden" name="tanggal" value="<?php echo $tanggal; ?>" />
                                         <input type="hidden" name="id_tanah" value="<?php echo $id_tanah; ?>" />
-                                        <input type="hidden" name="id_penduduk" value="<?php echo $penduduk->id_penduduk; ?>" />  
-                                        <button type="submit" class="btn btn-primary"><?php echo $button ?></button> 
+                                        <input type="hidden" name="id_penduduk" value="<?php echo $penduduk->id_penduduk; ?>" />
+                                        <button type="submit" class="btn btn-primary"><?php echo $button ?></button>
                                         <a href="<?php echo site_url('data_tanah/penduduk/'.$penduduk->id_penduduk) ?>" class="btn btn-default">Cancel</a>
-                                    
+
                                     </div>
                                     <div class="col-md-6">
                                        <div class="form-group">

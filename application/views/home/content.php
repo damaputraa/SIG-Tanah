@@ -42,7 +42,7 @@
                             <div class="col-md-4 col-sm-4 col-xs-8">
                                 <div class="business2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                                     <p class="newse2">Berita</p>
-                                    <p class="news6">Mengelola berita terbaru desa Tawing</p>
+                                    <p class="news6">Mengelola berita terbaru Seputar Pemetaan Tanah di Palangkaraya</p>
                                 </div>
                                 <!-- /.business -->
                             </div>
